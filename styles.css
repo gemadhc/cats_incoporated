@@ -245,3 +245,50 @@ body{
     display: none;
   }
 }
+
+
+
+/*burger menu display*/
+
+.show_menu{
+  width: 60vw;
+  height: 50vh;
+  background-color:#9FC088;
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: space-around;
+  visibility: hidden;
+}
+.toggle_menu{
+  visibility: visible;
+}
+.sand_option_div{
+  background-color: #E8C07D;
+  text-align: center;
+  flex-basis: 10vh;
+}
+.menu_options_text{
+  color: #614124;
+  font-size: 5vw;
+}
+@media screen
+    and (min-device-width: 800px){
+      .show_menu{
+        top: 30vh;
+        width: 40vw;
+        justify-content: space-around;
+      }
+      .sand_option_div{
+        background-color: #E8C07D;
+        text-align: center;
+      }
+      .menu_options_text{
+        color: #614124;
+        font-size: 2vw;
+      }
+}

@@ -1,7 +1,38 @@
 
+function toggle_menu(){
+  var the_menu = document.querySelector("#menu");
+  the_menu.classList.toggle("toggle_menu");
+}
+function show_friends(){alert("friends")}
+function show_events(){alert("events")}
+function show_contact(){alert("events")}
+function build_menu(content){
+
+  var options = ["Our Vision", "Find a Friend", "Events", "Contact"];
+  var function_names = [show_vision, show_friends, show_events, show_contact];
+  var menu_frame = document.createElement("div");
+  menu_frame.classList.add("show_menu");
+  menu_frame.setAttribute("id", "menu");
+
+  for(var i=0; i<4; i++){
+    var my_option = document.createElement("div");
+    my_option.classList.add("sand_option_div");
+    my_option.addEventListener("click", function_names[i]);
+    var option_name = document.createElement("h2");
+    option_name.classList.add("menu_options_text");
+    option_name.innerHTML = options[i];
+    my_option.append(option_name);
+    menu_frame.append(my_option);
+  }
+
+  content.append(menu_frame);
+}
 
 function show_vision(){
   var content = document.querySelector(".entire-content");
+  if(content== null){
+    content = document.querySelector(".entire-content-noland");
+  }
   while(content.firstChild){
     content.removeChild(content.firstChild);
   }
@@ -23,6 +54,7 @@ function show_vision(){
   burger.append(sand2);
   burger.append(sand3);
 
+  burger.addEventListener("click", toggle_menu);
   content.append(burger);
 
   var company_name = document.createElement("h3");
@@ -46,8 +78,10 @@ function show_vision(){
   information_card.append(image);
   information_card.append(this_paragraph);
 
-
   content.append(information_card);
+
+  build_menu(content);
+
 }
 
 document.querySelector(".vision").addEventListener("click", show_vision);

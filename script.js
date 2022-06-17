@@ -1,4 +1,5 @@
 
+/*
 function toggle_menu(){
   var the_menu = document.querySelector("#menu");
   the_menu.classList.toggle("toggle_menu");
@@ -84,4 +85,4 @@ function show_vision(){
 
 }
 
-document.querySelector(".vision").addEventListener("click", show_vision);
+*/

@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <head>
   <title>Cats Incorporated | Vision </title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="burger_style.css">
+  <link rel="stylesheet" href="general_page.css">
+  <link rel="stylesheet" href="main_content.css">
   <link rel="stylesheet" href="https://use.typekit.net/kwo2qcy.css">
   <link rel="stylesheet" href="https://use.typekit.net/kwo2qcy.css">
   <link rel="stylesheet" href="https://use.typekit.net/kwo2qcy.css">
@@ -9,31 +12,26 @@
 </head>
 <body>
   <div class="entire-content-noland">
-    <div class="burger">
-      <div class="sand-div"></div>
-      <div class="sand-div"></div>
-      <div class="sand-div"></div>
-    </div>
+    <nav class="navigation_bar">
+      <div class="burger">
+        <div class="bar first_bar"></div>
+        <div class="bar middle_bar"></div>
+        <div class="bar middle_bar"></div>
+        <div class="bar last_bar"></div>
+      </div>
+    </nav>
     <h3 class="home-link">CATS INCORPORATED</h3>
     <div class="content-container">
       <h2 class="section-title">Contact</h2>
       <div class="hours">Hours</div>
       <div class ="location">Location</div>
     </div>
-    <div class="show_menu" id="menu">
-      <div class="sand_option_div go_vision" >
-        <h2 class="menu_options_text">Our Vision</h2>
-      </div>
-      <div class="sand_option_div go_friend">
-        <h2 class="menu_options_text">Find a Friend</h2>
-      </div>
-      <div class="sand_option_div go_events">
-        <h2 class="menu_options_text">Events</h2>
-      </div>
-      <div class="sand_option_div go_contact">
-        <h2 class="menu_options_text">Contact</h2>
-      </div>
-    </div>
+  <ul class="show_options" id="menu">
+    <li><a class="clickable vision go_vision">Vision</a></li>
+    <li><a class="clickable go_friend">Find a friend</a></li>
+    <li><a class="clickable go_events">Events</a></li>
+    <li><a class="clickable contact go_contact ">Contact</a></li>
+  </ul>
   </div>
   <script src="script_vision.js"></script>
 </body>

@@ -1,0 +1,45 @@
+.section-title{
+  font-family: p22-arts-and-crafts, sans-serif;
+  font-size: 5vw;
+  line-height: 5vh;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  color: #614124;
+  text-align: center;
+  align-self: flex-end;
+  visibility: visible;
+  display: block;
+}
+.toggle_title{
+  visibility: hidden;
+}
+.image{
+  display: block;
+  height: 25vh;
+  width: 30vw;
+}
+.toggle-image{
+  visibility: hidden;
+}
+.paragraph{
+  display: block;
+  background-color: #E8C07D;
+  color: #614124;
+  text-align:left;
+  font-size: 3vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10vw;
+}
+.event_flyer{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 5vh;
+}
+@media screen
+  and (min-device-width: 800px){
+    .toggle_title{
+      visibility: visible;
+    }
+  }

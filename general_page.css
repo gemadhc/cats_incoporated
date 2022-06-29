@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+  padding:0;
+  background-color: #CC704B;
+}
+
+.entire-content-noland{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh 10vh 80vh ;
+  justify-items: flex-start;
+  align-items:flex-start;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.home-link{
+  font-family: p22-arts-and-crafts, sans-serif;
+  font-size: 3vw;
+  line-height:3.5vh;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  color: #9FC088;
+  text-align: right;
+  justify-self: flex-end;
+  align-self: flex-end;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-bottom:2vh;;
+}
+.content-container{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  background-color: #E8C07D;
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: overlay;
+  align-self:flex-start;
+}
+@media screen
+  and (min-device-width: 800px){
+    ::-webkit-scrollbar {
+    width: 12px;
+    display: none;
+  }
+  }

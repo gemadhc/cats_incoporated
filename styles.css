@@ -1,4 +1,5 @@
-body{
+
+/*body{
   margin: 0;
   padding:0;
   background-color: #CC704B;
@@ -114,7 +115,7 @@ body{
     }
 }
 
-
+*/
 /* Vision Page set up*/
 
 .entire-content-noland{
@@ -123,24 +124,8 @@ body{
   grid-template-rows: 10vh 10vh 80vh ;
   justify-items: center;
   align-items: center;
-  padding: 0 auto;
-}
 
-.burger{
-  grid-column-start:1;
-  grid-column-end: 2;
-  justify-self: flex-start;
-  align-self: flex-end;
-  margin-left: 10vw;
 }
-.sand-div{
-  width: 25px;
-  height: 2.5px;
-  background-color: #9FC088;
-  margin: 5px 0;
-}
-
-
 .image{
   display: block;
   height: 25vh;
@@ -156,7 +141,6 @@ body{
   text-align: center;
   align-self: flex-end;
 }
-
 .content-container{
   grid-column-start: 1;
   grid-column-end: 4;
@@ -187,9 +171,6 @@ body{
 }
 @media screen
   and (min-device-width: 800px){
-    .burger{
-      margin-bottom:5vh;
-    }
     .home-link{
       margin-bottom: 5vh;
       font-size: 1vw;
@@ -242,23 +223,35 @@ body{
   }
 }
 
-
-
 /*burger menu display*/
+.entire-menu{
+  width: 80vw;
+  height: 10vh;
+  grid-column-start:1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+.burger{
+}
+.sand-div{
+  width: 25px;
+  height: 2.5px;
+  background-color: #9FC088;
+  margin: 5px 0;
+}
 
 .show_menu{
-  width: 60vw;
-  height: 50vh;
+  width: 70vw;
+  height: 10vh;
   background-color:#9FC088;
-  padding-left: 3vw;
-  padding-right: 3vw;
   display: flex;
-  flex-flow:column nowrap;
+  flex-flow:row nowrap;
   justify-content: space-around;
-  grid-column-start:1;
-  grid-row-start: 2;
-  visibility: hidden;
-  align-self: flex-start;
+  visibility: visible;
+  align-self:flex-start;
 }
 .toggle_menu{
   visibility: visible;
@@ -274,10 +267,20 @@ body{
 }
 @media screen
     and (min-device-width: 800px){
+      .burger{
+      }
+      .sand-div{
+        width: 25px;
+        height: 2.5px;
+        background-color: #9FC088;
+        margin: 5px 0;
+      }
       .show_menu{
         top: 30vh;
-        width: 40vw;
+        width: 30vw;
         justify-content: space-around;
+        position: absolute;
+        left:3vw;
       }
       .sand_option_div{
         background-color: #E8C07D;
@@ -432,20 +435,7 @@ body{
       font-style: normal;
       color: #614124;
     }
-    .burger{
-      grid-column-start:1;
-      grid-column-end: 2;
-      justify-self: flex-start;
-      align-self: flex-end;
-      margin-left: 3vw;
-      margin-bottom: 0;
-    }
-    .sand-div{
-      width: 10vw;
-      height: 0.5vh;
-      background-color: #9FC088;
-      margin: 1vh 0;
-    }
+
     .filter-section{
       height: 15vh;
       display: flex;

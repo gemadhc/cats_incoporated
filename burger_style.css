@@ -83,6 +83,7 @@
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-around;
+      cursor: pointer;
     }
     .bar{
       height: 1vh;
@@ -131,6 +132,7 @@
       font-size: 1.5vw;
       color:#614124;
       background-color:#E8C07D;
+      cursor: pointer;
     }
     .contact{
       margin-bottom: vw;

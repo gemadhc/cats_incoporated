@@ -23,7 +23,6 @@
 }
 .paragraph{
   display: block;
-  background-color: #E8C07D;
   color: #614124;
   text-align:left;
   font-size: 3vw;
@@ -37,9 +36,22 @@
   height: 100vh;
   margin-top: 5vh;
 }
+.header{
+  display: flex;
+  flex-flow: row;
+  width: 90vw;
+  justify-content: space-between;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  align-self: center;
+  
+}
 @media screen
   and (min-device-width: 800px){
     .toggle_title{
+      visibility: visible;
+    }
+    .toggle-image{
       visibility: visible;
     }
   }

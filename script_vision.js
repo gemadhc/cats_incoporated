@@ -7,22 +7,26 @@ function toggle_menu(){
   title.classList.toggle("toggle-image");
 }
 var sentinel = 0;
+var image_position = 0;
 var moveTitleInterval= setInterval(move_title_position, 10);
 function move_title_position(){
   var title = document.querySelector(".section-title");
   var image = document.querySelector(".image");
   if(image!=null){
-    image.style.position = "absolute";
-    image.style.right = sentinel +'vw';
+    image.style.position = "relative";
+    image.style.right = image_position +'vw';
 
   }
-  title.style.position= "absolute";
-  title.style.left = sentinel + 'vw';
-  if(sentinel == 15){
-    clearInterval(moveTitleInterval);
+  title.style.position= "relative";
+  title.style.right = sentinel + 'vw';
+  if(image_position == 20){
+    sentinel = sentinel  + 1.0;
+    if(sentinel == 50){
+      clearInterval(moveTitleInterval);
+    }
+  }else{
+    image_position += 1.0;
   }
-  sentinel = sentinel  + 1.0;
-
 }
 
 function open_vision(){
@@ -37,12 +41,16 @@ function open_events(){
 function open_contact(){
   location.replace("contact.html");
 }
+function open_contact(){
+  location.replace("home.html");
+}
 
 function add_events(){
   document.querySelector(".go_vision").addEventListener("click", open_vision);
   document.querySelector(".go_friend").addEventListener("click", open_friend);
   document.querySelector(".go_events").addEventListener("click", open_events);
   document.querySelector(".go_contact").addEventListener("click", open_contact);
+  document.querySelector(".home-link").addEventListener("click", open_contact);
 }
 
 

@@ -21,7 +21,7 @@ function move_title_position(){
   title.style.right = sentinel + 'vw';
   if(image_position == 20){
     sentinel = sentinel  + 1.0;
-    if(sentinel == 50){
+    if(sentinel == 20){
       clearInterval(moveTitleInterval);
     }
   }else{

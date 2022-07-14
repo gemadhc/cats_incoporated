@@ -1,0 +1,14 @@
+
+.friends-containter{
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+.friend-title{
+  grid-column-start:2;
+}
+.filter_bar, .card-cats-container, p, h2{
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+}

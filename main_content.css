@@ -1,4 +1,4 @@
-.section-title{
+.section-title .friend-title{
   font-family: p22-arts-and-crafts, sans-serif;
   font-size: 5vw;
   line-height: 5vh;
@@ -44,7 +44,7 @@
   grid-row-start: 2;
   grid-column-start: 1;
   align-self: center;
-  
+
 }
 @media screen
   and (min-device-width: 800px){

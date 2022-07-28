@@ -45,6 +45,51 @@ body{
   overflow: overlay;
   align-self:flex-start;
 }
+.entire-content{
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  justify-content: center;
+}
+.homelist{
+  list-style: none;
+}
+.clickable{
+  text-decoration: none;
+  font-size: 3vw;
+}
+.nav-bar, .footer{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.main-head{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.sch_tbl{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 20vh;
+}
+.day-name, .time-sch{
+  font-size: 2vw;
+  margin: 0;
+}
+.day-container{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.hours{
+  width: 100vw;
+}
+.contact-section{
+  text-align: center;
+
+}
 @media screen
   and (min-device-width: 800px){
     ::-webkit-scrollbar {

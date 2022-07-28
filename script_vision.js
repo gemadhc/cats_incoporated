@@ -41,16 +41,15 @@ function open_events(){
 function open_contact(){
   location.replace("contact.html");
 }
-function open_contact(){
+function open_home(){
   location.replace("home.html");
 }
-
 function add_events(){
   document.querySelector(".go_vision").addEventListener("click", open_vision);
   document.querySelector(".go_friend").addEventListener("click", open_friend);
   document.querySelector(".go_events").addEventListener("click", open_events);
   document.querySelector(".go_contact").addEventListener("click", open_contact);
-  document.querySelector(".home-link").addEventListener("click", open_contact);
+  document.querySelector(".home-link").addEventListener("click", open_home);
 }
 
 

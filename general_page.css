@@ -56,7 +56,7 @@ body{
 }
 .clickable{
   text-decoration: none;
-  font-size: 3vw;
+  font-size: 1vw;
 }
 .nav-bar, .footer{
   display: flex;

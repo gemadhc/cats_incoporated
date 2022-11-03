@@ -3,41 +3,60 @@
   width: 90vw;
   display: grid;
   grid-template-rows: 1fr 10fr;
-  grid-template-columns: 15vw 85vw;
-
+  grid-template-columns: 30vw 60vw;
+  padding-bottom: 10vh;
 }
 .friend-title{
   grid-column-start:2;
+  margin-top: 5vh;
 }
 .filter_bar, .card-cats-container, p, h2{
   align-self: flex-start;
   margin: 0;
   padding: 0;
 }
-
 .filter_bar{
-  width: 10vw;
+  margin-left: 5vw;
+}
+
+.option{
+  font-size: 3vw;
+}
+.filter_section_title{
+  font-size: 3.5vw;
+}
+.filter_bar{
+  width: 20vw;
 }
 
 .cat_photo{
   display: block;
   height: 10vh;
-  width: 20vw;
+  width: 30vw;
+}
+
+.options-section{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 @media screen
   and (min-device-width: 800px){
-    .options-section{
-      font-size: 1vw;
+    .option{
+      font-size: 2vw;
     }
     .filter_section_title{
-      font-size: 1.5vw;
+      font-size: 2.5vw;
+    }
+    .filter_bar{
+      width: 15vw;
     }
     .friends-container{
-      grid-template-columns: 5vw 85vw;
+      grid-template-columns: 15vw 75vw;
     }
     .cat_photo{
       display: block;
-      height: 20vh;
+      height: 40vh;
       width: 20vw;
     }
     .card-cats-container{
@@ -48,6 +67,16 @@
       font-size: 1.5vw;
     }
     .friend-title{
-      font-size: 2vw;
+      font-size: 3vw;
+    }
+    input.largerbox{
+      height: 2.5vh;
+      width: 2.5vw;
+      align-self: center;
+    }
+    .apply-button{
+      height: 5vh;
+      width: 20vw;
+      font-size: 3vh;
     }
   }

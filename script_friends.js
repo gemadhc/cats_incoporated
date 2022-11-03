@@ -80,6 +80,7 @@ function build_filter_box(){
       checkbox.setAttribute("id", cat_colors[option]);
       checkbox.setAttribute("name", cat_colors[option]);
       checkbox.setAttribute("value", cat_colors[option]);
+      checkbox.classList.add("largerbox");
 
       option_label.setAttribute("for", cat_colors[option]);
       option_label.innerText = cat_colors[option];

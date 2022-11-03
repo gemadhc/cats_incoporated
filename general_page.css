@@ -56,7 +56,7 @@ body{
 }
 .clickable{
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 4vw;
 }
 .nav-bar, .footer{
   display: flex;
@@ -95,5 +95,9 @@ body{
     ::-webkit-scrollbar {
     width: 12px;
     display: none;
+  }
+  .clickable{
+    text-decoration: none;
+    font-size: 1vw;
   }
   }
